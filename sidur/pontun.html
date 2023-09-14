@@ -1,0 +1,187 @@
+<!--
+
+    Umfangsmikil vefhönnun í boði Kaupþings
+    https://kaupthing.com/
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Pöntun</title>
+        <meta name="title" content="Veitingastaðurinn" />
+        <meta name="description" content="Á Veitingastaðnum hugsum við vel um þig og gefum þér gott að borða." />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Veitingastaðurinn" />
+        <meta property="og:description" content="Á Veitingastaðnum hugsum við vel um þig og gefum þér gott að borða." />
+        <meta property="og:image" content="../img/sharing.jpg" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    </head>
+    <body>
+        <a href="#content" class="sr-only">Beint í efni</a>
+
+        <header>
+            <div class="container">
+                <h1>Veitingastaðurinn</h1>
+                <p>Á Veitingastaðnum hugsum við vel um þig og gefum þér gott að borða.</p>
+            </div>
+        </header>
+
+        <nav>
+            <div class="container">
+                <div>
+                    <a href="../index.html">Forsíða</a>
+                    <a href="./um.html">Um veitingastaðinn</a>
+                    <a href="./rettir.html">Matseðill</a>
+                    <span>Panta borð/heimsendingu</span>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div id="content" class="container">
+                <form class="box-container">
+                    <div>
+                        <div class="box-bordered">
+                            <h3>Panta borð</h3>
+                            <div>
+                                <label id="when">Hvenær viltu koma?</label>
+                                <input type="datetime-local" />
+                            </div>
+                            <div>
+                                <label id="howmany">Hve mörg? (1-10)</label>
+                                <input type="number" min="1" max="10" value="1" aria-labelledby="howmany" />
+                            </div>
+                            <div>
+                                <label id="message">Er einhvað sem þú vilt taka fram?</label><br/>
+                                <textarea rows="5" cols="25" aria-labelledby="message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-bordered order-delivery">
+                            <h3>Panta heimsendingu</h3>
+                            <div>
+                                <label>Réttur #1</label>
+                                <select aria-label="Réttur #1">
+                                    <option></option>
+                                    <option>Pizza</option>
+                                    <option>Hamborgari</option>
+                                    <option>Lasagna</option>
+                                    <option>Quesadilla</option>
+                                    <option>Sveppa risotto</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Réttur #2</label>
+                                <select aria-label="Réttur #2">
+                                    <option></option>
+                                    <option>Pizza</option>
+                                    <option>Hamborgari</option>
+                                    <option>Lasagna</option>
+                                    <option>Quesadilla</option>
+                                    <option>Sveppa risotto</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Réttur #3</label>
+                                <select aria-label="Réttur #3">
+                                    <option></option>
+                                    <option>Pizza</option>
+                                    <option>Hamborgari</option>
+                                    <option>Lasagna</option>
+                                    <option>Quesadilla</option>
+                                    <option>Sveppa risotto</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Réttur #4</label>
+                                <select aria-label="Réttur #4">
+                                    <option></option>
+                                    <option>Pizza</option>
+                                    <option>Hamborgari</option>
+                                    <option>Lasagna</option>
+                                    <option>Quesadilla</option>
+                                    <option>Sveppa risotto</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Réttur #5</label>
+                                <select aria-label="Réttur #5">
+                                    <option></option>
+                                    <option>Pizza</option>
+                                    <option>Hamborgari</option>
+                                    <option>Lasagna</option>
+                                    <option>Quesadilla</option>
+                                    <option>Sveppa risotto</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label id="address">Heimilisfang</label>
+                                <input type="text" aria-labelledby="address" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-bordered">
+                            <h3>Þínar upplýsingar</h3>
+                            <div>
+                                <label id="name">Nafn <span style="color:red;">*</span></label>
+                                <input type="text" placeholder="Jón Jónsson" required aria-labelledby="name" />
+                            </div>
+                            <div>
+                                <label id="email">Netfang <span style="color:red;">*</span></label>
+                                <input type="email" placeholder="jon@jonsson.is" required aria-labelledby="email" />
+                            </div>
+                            <div>
+                                <label id="phone">Sími <span style="color:red;">*</span></label>
+                                <input type="tel" placeholder="8883320" required aria-labelledby="phone" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-bordered">
+                            <h3>Samþykkja og panta</h3>
+                            <div style="padding-bottom:1rem;">
+                                <input type="checkbox" id="terms" required />
+                                <label for="terms">Ég hef lesið og samþykki skilmála veitingastaðsins</label>
+                            </div>
+                            <button type="submit">Panta</button>
+                        </div>
+                    </div>
+                </form>
+                <a href="../index.html">Aftur á forsíðu</a>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content-wrapper">
+                    <div>
+                        <h2>Opnunartími</h2>
+                        <strong>Mánudaga til fimmtudaga</strong>
+                        <p>09:00-18:00</p>
+                        <strong>Föstudaga</strong>
+                        <p>10:00-22:00</p>
+                        <strong>Laugardaga</strong>
+                        <p>11:00-22:00</p>
+                        <strong>Sunnudaga</strong>
+                        <p>Lokað</p>
+                    </div>
+                    <div>
+                        <h2>Hér erum við</h2>
+                        <p>Veitingastaðurinn slhf.<br/>Aðalgata 10 <br/>100 Reykjavík <br/><a href="+3543334567">Sími 333-4567</a><br/><a href="mailto:veitingastadur@example.org">veitingastadur@example.org</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

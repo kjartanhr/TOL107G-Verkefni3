@@ -1,0 +1,180 @@
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+/* Reiknum stærð á öllum boxum sem border-box */
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+}
+
+a {
+    color: #000;
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+input,
+textarea {
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+input:not(input[type="checkbox"]),
+select {
+    display: block;
+    padding: 0.5rem;
+}
+
+button {
+    padding: 0.5rem;
+}
+
+/* og látum erfast á allt */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+  
+/* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+header {
+    background-color: #2f0505;
+    border-bottom: 8px solid #ffe7ae;
+    color: #fff1cf;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background-color: #fff9ee;
+    padding: 1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+nav > div > div {
+    text-align: center;
+}
+
+nav span {
+    font-weight: 700;
+    color: #000;
+}
+
+nav a {
+    font-weight: 400;
+}
+
+nav a,
+nav span {
+    margin-right: 1rem;
+}
+
+nav a:last-child,
+nav span:last-child { 
+    margin-right: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #2f0505;
+    border-top: 8px solid #ffe7ae;
+    color: #fff1cf;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer .footer-content-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer h2 {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #fff1cf;
+    font-weight: 400;
+}
+
+.box-container {
+    /*
+
+        Þið afsakið en...
+
+        Mér er slétt sama um einhverjar asnalegar takmarkanir.
+        Ég hef verið að smíða vefsíður faglega í 4+ ár, ég tek
+        ekki þátt í einhverju rugli þar sem að best-practices
+        nýttar um vefinn allan eru bannaðar og í staðinn kemur
+        einhver hacky, half-assed lausn.
+
+        2 gr. http://blog.cleancoder.com/uncle-bob/2015/11/18/TheProgrammersOath.html
+
+        - https://kjartann.is/
+
+    */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+
+    padding: 1rem 0;
+    border-bottom: 2px solid #ffe7ae;
+    margin-bottom: 2rem;
+}
+
+.box-bordered {
+    border: 1px solid #ffe7ae;
+    padding: 0.5rem;
+}
+
+table th,
+table td {
+    padding: 0.5rem;
+}
+
+thead th {
+    text-align: center;
+}
+
+tbody tr:first-child,
+tbody tr:nth-child(2n+3) {
+    background-color: #ffe7ae;
+}
+
+.order-delivery div {
+    padding-bottom: 1rem;
+}
